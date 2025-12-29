@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><p id="paragraph"></p></div>
+    
+    <script>
+        
+        let paragraph =  document.getElementById("paragraph")
+        paragraph.innerText = "paragraph ka waan sameeyay  "
+
+       
+    </script>
+</body>
+</html> -->
+<!-- <! <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myHeading">magaceyga waa cabdulaahi</h1>
+    <p>Click to add backgroundColor:</p>
+    <button onclick="myfunction()">Add name</button>
+    <script>
+        function myfunction() {
+           document.getElementById("myHeading").setAttribute("style", "background-color: lightblue; font-weight: bolder; font-style: italic;");
+
+
+        }
+    </script>
+</body>
+</html>  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       let header = document.createElement("header");
+header.textContent = "this is created header";
+
+document.body.appendChild(headerElement);
+
+let footerElement = document.createElement("footer");
+footerElement.innerText = "this is created footer";
+document.body.appendChild(footerElement);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <p id="paragraph">this is paragraph</p>
+        <span id="span2">this is existing span</span>
+    </div>
+    
+    <script>
+  // create element
+  let divElement = document.createElement("p");
+  divElement.innerText = "this is created paragraph";
+  document.body.appendChild(divElement);
+
+  // remove element
+  document.getElementById("paragraph");
+  let span = document.createElement("span");
+  span.innerText = "this is removed span";
+
+  // replace element
+  let oldElement = document.getElementById("paragraph");
+  let newElement = document.createElement("h2");
+  newElement.innerText = "this is replaced element";
+  document.body.replaceChild(newElement, oldElement);
+
+  // insert before
+  let parentElement = document.getElementById("div");
+  let existingSpan = document.getElementById("span2");
+  let newSpan = document.createElement("span");
+  newSpan.innerText = "this is inserted span";
+  parentElement.insertBefore(newSpan, existingSpan);
+</script>
+
+</body>
+</html>
